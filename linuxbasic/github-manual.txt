@@ -45,6 +45,8 @@ git status
 git push origin master:remote-branch
 git branch -a
 
+# tracking branch
+git checkout --track origin/remote-branch
 
 
 
