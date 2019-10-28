@@ -42,14 +42,17 @@ git status
 
 
 # push changes to junior team branch on sysadmin cloud repo
+# if not setting tracking branch, we need to push local branch with one name to remote branch  with another name.  
 git push origin master:remote-branch
 git branch -a
+git branch -d branch
+git checkout branch
+git checkout -b branch basedbranch
+git remote -v
 
-# tracking branch
+# tracking branch configuration
 git checkout --track origin/remote-branch
-
-#Switch to laptop branch
-git checkout laptop
+git checkout --set-upstream-to origin/remote-branch
 
 
 
