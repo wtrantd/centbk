@@ -48,6 +48,8 @@ git branch -a
 # tracking branch
 git checkout --track origin/remote-branch
 
+#Switch to laptop branch
+git checkout laptop
 
 
 
