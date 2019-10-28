@@ -1,0 +1,61 @@
+### Sharing my project repo on public ###
+
+# install git
+yum install -y git
+
+# user global configuration
+git config --global user.name "abc"
+git config --global user.email "abc@domain.com"
+
+# editor
+git config --system core.editor "/bin/vim"
+
+# Creating a local repository and adding content 
+
+mkdir ~/repo
+git init ~/repo
+ls -al ~/repo
+
+
+
+### Using team project repo on my local computer ###
+
+# install git
+yum install -y git
+
+
+# clone team project github repo to local computer
+
+git clone https://github.com/sysadmin/bashscripts.git
+
+# setting local user
+
+git config user.name "William Tran"
+git config user.email "wil@williamtran.vn"
+
+# make changes and commit it
+git add .
+git commit -m "desscriptions"
+git log --oneline
+git log -p
+git status
+
+
+# push changes to junior team branch on sysadmin cloud repo
+git push origin master:remote-branch
+git branch -a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

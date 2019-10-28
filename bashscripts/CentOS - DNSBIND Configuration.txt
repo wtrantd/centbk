@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# This script is used for setting up master BIND DNS
+
+
+exit 0
+
+
+

@@ -1,0 +1,13 @@
+
+
+# Using Windows NTFS file system on Linx
+# Windows 10 needs to fully shutdown by CMD command 'shutdown -s 0' that brings a good NTFS state to mount on Linux without any error
+
+# sudo yum install -y epel-release
+# sudo yum install -y ntfs-3g
+# fdisk -l
+# mount -t ntfs-3g /dev/sdb1 /mnt/data 
+# umount /mnt/data
+# sudo echo "/dev/sdb1 /mnt/data ntfs-3g defaults 0 0" >> /etc/fstab
+
+
