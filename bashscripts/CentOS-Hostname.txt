@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+#
+
+# Setting hostname
+echo "Setting hostname ..."
+echo "Current hostname is $hostname"
+hostnamectl set-hostname server1.example.com
+echo "192.168.1.21 server1.example.com server1" >> /etc/hosts
+
+# Verifying hostname
+echo "Verifying hostname"
+hostname
+hostnamectl
+
